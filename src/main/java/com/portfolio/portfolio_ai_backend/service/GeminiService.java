@@ -59,7 +59,7 @@ public class GeminiService {
                 log.info("after response", response);
                 return extractText(response);
             } catch (HttpClientErrorException e) {
-                log.warn("catch", e)
+                log.warn("catch", e);
                 if (e.getStatusCode().value() == 429) log.warn("Key {} exhausted, trying next...", i + 1);
                 else break;
             } catch (Exception e) {
