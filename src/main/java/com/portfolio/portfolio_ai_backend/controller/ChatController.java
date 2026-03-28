@@ -5,6 +5,7 @@ import com.portfolio.portfolio_ai_backend.model.ChatResponse;
 import com.portfolio.portfolio_ai_backend.service.GeminiService;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/api")
 public class ChatController {
